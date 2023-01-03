@@ -1,0 +1,143 @@
+:root {
+  /* Color palette */
+  --color-primary: #22181c;
+  --color-secondary: #2e424d;
+  --color-tertiary: #857e73;
+  --color-quaternary: #0b1a2b;
+  --color-quinary: #4c5456;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+
+  display: flex;
+  min-height: 100vh;
+  background-image: url(../assets/925534.jpg);
+  background-size: cover;
+}
+
+.signupForm {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+}
+
+.signupForm-introduction {
+  margin: 150px 30px 100px 30px;
+
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.signupForm-introduction em {
+  font-style: italic;
+}
+
+.signupForm-form {
+  margin: 0 30px 30px 30px;
+}
+
+.signupForm-callToAction {
+  margin-bottom: 30px;
+
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.signupForm-wrapper {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+
+.signupForm-row {
+  display: flex;
+  flex: 1;
+}
+
+.signupForm-field {
+  flex: 1;
+}
+
+.signupForm-field label {
+  font-family: "Open Sans", sans-serif;
+  color: var(--color-primary);
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+.signupForm-field input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.signupForm-finalize {
+  margin: 75px 30px 30px 30px;
+}
+
+.signupForm-submitButton {
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+
+  width: 200px;
+  background-color: blue;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+}
+
+.signupForm-submitButton:hover {
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.signupForm-createdAccount {
+  font-size: 1.2rem;
+  margin-top: 30px;
+}
+
+.logoSection {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoSection-logo {
+  filter: invert(71%) sepia(72%) saturate(246%) hue-rotate(335deg)
+    brightness(103%) contrast(97%);
+}
+
+.logoSection-imageCredit {
+  margin-bottom: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: inherit;
+  color: #f8b690;
+}

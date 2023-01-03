@@ -5,18 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Felix Sign-up Form</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/styles-reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <section class="backgroundImage">
-      <img src="assets/925534.jpg" alt="Background anime scenery" />
-      <div class="backgroundImage-logoWrapper">
-        <img src="assets/Felix.svg" alt="Felix logo" />
-      </div>
-      <div class="backgroundImage-credit">
-        Image link: https://imgur.com/IiPUSFn
-      </div>
-    </section>
     <section class="signupForm">
       <p class="signupForm-introduction">
         This is not a real online service! You know you need something like this
@@ -27,38 +19,60 @@
         You <em>know</em> you want to.
       </p>
       <form action="" method="POST" class="signupForm-form" id="signupForm">
-        <p>Let's do this!</p>
-        <ul>
-            <li>
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" id="first-name" name="first-name">
+        <p class="signupForm-callToAction">Let's do this!</p>
+        <ul class="signupForm-wrapper">
+          <div class="signupForm-row">
+            <li class="signupForm-field">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" id="first-name" name="first-name" />
             </li>
-            <li>
-                <label for="last-name">LAST NAME</label>
-                <input type="text" id="last-name" name="last-name">
+            <li class="signupForm-field">
+              <label for="last-name">LAST NAME</label>
+              <input type="text" id="last-name" name="last-name" />
             </li>
-            <li>
-                <label for="email">EMAIL</label>
-                <input type="email" id="email" name="email">
+          </div>
+          <div class="signupForm-row">
+            <li class="signupForm-field">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" />
             </li>
-            <li>
-                <label for="phone-number">PHONE NUMBER</label>
-                <input type="tel" id="phone-number" name="phone-number">
+            <li class="signupForm-field">
+              <label for="phone-number">PHONE NUMBER</label>
+              <input type="tel" id="phone-number" name="phone-number" />
             </li>
-            <li>
-                <label for="pwd">PASSWORD</label>
-                <input type="password" id="pwd" name="password">
+          </div>
+          <div class="signupForm-row">
+            <li class="signupForm-field">
+              <label for="pwd">PASSWORD</label>
+              <input type="password" id="pwd" name="password" />
             </li>
-            <li>
-                <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                <input type="password" id="confirm-pwd" name="confirm-password">
+            <li class="signupForm-field">
+              <label for="confirm-pwd">CONFIRM PASSWORD</label>
+              <input type="password" id="confirm-pwd" name="confirm-password" />
             </li>
+          </div>
         </ul>
       </form>
       <div class="signupForm-finalize">
-        <button type="submit" form="signupForm" class="signupForm-finalize-submitButton">Create Account</button>
-        
-    </div>
+        <button type="submit" form="signupForm" class="signupForm-submitButton">
+          Create Account
+        </button>
+        <p class="signupForm-createdAccount">
+          Already have an account? <a href="#">Log in</a>
+        </p>
+      </div>
+    </section>
+    <section class="logoSection">
+      <div class="logoSection-wrapper">
+        <img src="assets/Felix.svg" alt="Felix logo" class="logoSection-logo" />
+      </div>
+      <a
+        class="logoSection-imageCredit"
+        href="https://imgur.com/IiPUSFn"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Image credit</a
+      >
     </section>
   </body>
 </html>
