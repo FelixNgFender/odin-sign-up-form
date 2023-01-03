@@ -7,6 +7,7 @@
     <title>Felix Sign-up Form</title>
     <link rel="stylesheet" href="styles/styles-reset.css" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <script src="js/validation.js"></script>    
   </head>
   <body>
     <section class="signupForm">
@@ -18,17 +19,17 @@
         <br />
         You <em>know</em> you want to.
       </p>
-      <form action="" method="POST" class="signupForm-form" id="signupForm">
+      <form onSubmit="return checkPassword(this)" action="" method="POST" class="signupForm-form" id="signupForm">
         <p class="signupForm-callToAction">Let's do this!</p>
         <ul class="signupForm-wrapper">
           <div class="signupForm-row">
             <li class="signupForm-field">
-              <label for="first-name">FIRST NAME</label>
-              <input type="text" id="first-name" name="first-name" />
+              <label for="firstName">FIRST NAME</label>
+              <input type="text" id="firstName" name="firstName" />
             </li>
             <li class="signupForm-field">
-              <label for="last-name">LAST NAME</label>
-              <input type="text" id="last-name" name="last-name" />
+              <label for="lastName">LAST NAME</label>
+              <input type="text" id="lastName" name="lastName" />
             </li>
           </div>
           <div class="signupForm-row">
@@ -37,8 +38,8 @@
               <input type="email" id="email" name="email" />
             </li>
             <li class="signupForm-field">
-              <label for="phone-number">PHONE NUMBER</label>
-              <input type="tel" id="phone-number" name="phone-number" />
+              <label for="phoneNumber">PHONE NUMBER</label>
+              <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phoneNumber" name="phoneNumber" />
             </li>
           </div>
           <div class="signupForm-row">
@@ -47,8 +48,8 @@
               <input type="password" id="pwd" name="password" />
             </li>
             <li class="signupForm-field">
-              <label for="confirm-pwd">CONFIRM PASSWORD</label>
-              <input type="password" id="confirm-pwd" name="confirm-password" />
+              <label for="confirmPwd">CONFIRM PASSWORD</label>
+              <input type="password" id="confirmPwd" name="confirmPassword" />
             </li>
           </div>
         </ul>

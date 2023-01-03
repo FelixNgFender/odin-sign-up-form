@@ -1,10 +1,11 @@
 :root {
   /* Color palette */
-  --form-bg-color: #57370da6;
+  --form-bg-color: #57370d81;
   --primary-text-color: #d7ccc1;
   --secondary-text-color: #ffffff;
   --accent-text-color: #53881f;
   --button-color: #214054;
+  --invalid-color: #c80a0a;
 }
 
 html {
@@ -23,7 +24,7 @@ body {
 
   font-family: "Roboto", sans-serif;
   color: var(--primary-text-color);
-  
+
   background-image: url(../assets/925534.jpg);
   background-size: cover;
 }
@@ -37,7 +38,7 @@ body {
 }
 
 .signupForm-introduction {
-  margin: 150px 30px 100px 30px;
+  margin: 150px 30px 80px 30px;
 
   font-size: 2rem;
   font-weight: bold;
@@ -88,13 +89,23 @@ body {
 .signupForm-field input {
   width: 80%;
   padding: 10px;
-  
+
   font-size: 1rem;
   font-weight: 600;
   background-color: var(--button-color);
   color: var(--secondary-text-color);
   border: 1px solid var(--primary-text-color);
   border-radius: 4px;
+}
+
+.signupForm-field input:focus {
+  outline: none;
+  border: 1px solid var(--accent-text-color);
+}
+
+.signupForm-field input:invalid {
+  outline: none;
+  border: 1px solid var(--invalid-color);
 }
 
 .signupForm-finalize {
@@ -152,7 +163,7 @@ body {
 .logoSection-imageCredit {
   width: auto;
   padding: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 
   background-color: var(--form-bg-color);
   text-decoration: none;
